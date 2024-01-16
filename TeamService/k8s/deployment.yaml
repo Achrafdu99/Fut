@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team-micro-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: team-micro-service
+  template:
+    metadata:
+      labels:
+        app: team-micro-service
+    spec:
+      containers:
+        - name: mon-micro-service
+          image: <nom-de-votre-image-docker-compose>:<tag-de-l-image>  # Remplacez par le nom de votre image Docker Compose et son tag
+          ports:
+            - containerPort: 8081  # Le port sur lequel votre micro-service écoute
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:postgresql://db:5432/pteamsDB"  # URL de la base de données PostgreSQL
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "postgres"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "achraf"
+      restartPolicy: Always
