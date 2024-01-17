@@ -1,7 +1,7 @@
 # Système de Gestion d'Équipes de Football
 
 ## Description
-Ce projet, dans le cadre de l'UE Développement comp. log. de Monsieur Saidi au Master MIAGE de Nice, il implémente un système de gestion pour les équipes de football, utilisant une architecture basée sur des microservices. Chaque service est spécialisé dans une fonctionnalité distincte et communique via Eureka.
+Ce projet, dans le cadre de l'UE Développement comp. log. de Monsieur Saidi au Master MIAGE de Nice, implémente un système de gestion pour les équipes de football, utilisant une architecture basée sur des microservices. Chaque service est spécialisé dans une fonctionnalité distincte et communique via Eureka.
 ## Statut du Projet
 Le projet est en cours de développement. Des corrections et améliorations sont prévues pour enrichir l'expérience d'apprentissage et profiter pleinement du cours.
 ## Microservices
